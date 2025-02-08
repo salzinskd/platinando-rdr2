@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'RDR2Font';
+    src: url('fonts/chinese\ rocks\ rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Aplica a fonte personalizada a todos os elementos */
+* {
+    font-family: 'RDR2Font', sans-serif;
+}
+
+/* Estilos gerais do body */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: red;
+    padding: 20px;
+    font-size: 37px;
+    font-weight: bold;
+}
+
+/* Estilos dos botões */
+.buttons {
+    margin: 20px;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 37px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+/* Estilos da área de conteúdo dinâmico */
+#conteudo {
+    margin: 20px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+/* Estilos da imagem */
+#imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos do texto exibido ao clicar em "Sobre" */
+.texto-sobre {
+    font-size: 37px; /* Tamanho da fonte aumentado */
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    color: #fff; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+.botao-busca {
+    padding: 20px 20px; /* Aumenta o preenchimento (tamanho interno) */
+    font-size: 37px; /* Aumenta o tamanho da fonte */
+    background-color: rgb(0, 0, 0); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de clique */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.botao-busca:hover {
+    background-color: darkred; /* Muda a cor ao passar o mouse */
+}
+
+.caixa-busca {
+    padding: 10px 20px; /* Aumenta o preenchimento (tamanho interno) */
+    font-size: 37px; /* Aumenta o tamanho da fonte */
+    width: 400px; /* Define a largura da caixa de busca */
+    border: 2px solid red; /* Adiciona uma borda vermelha */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-right: 10px; /* Espaçamento entre a caixa de busca e o botão */
+    background-color: #222; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+.caixa-busca::placeholder {
+    color: #aaa; /* Cor do placeholder */
+}
+
+/* Estilos específicos para a página de localizações */
+.busca-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.imagem {
+    width: 30%; /* Define o tamanho de cada imagem */
+    margin: 10px;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid red; /* Adiciona uma borda vermelha */
+}
